@@ -1,26 +1,42 @@
 [
   {
-    "title": "KPSC Exam Preparation App",
-    "description": "Prepare confidently for Karnataka Public Service Commission exams with curated quizzes and study material.",
-    "icon": "https://play-lh.googleusercontent.com/EXAMPLE_ICON1", 
+    "title": "KPSC KAS FDA SDA GroupC Exam",
+    "description": "Kensify’s complete app for KPSC/KAS / FDA / SDA / Group C exams with study materials, PDFs, current affairs & mock tests.",
+    "icon": "https://play-lh.googleusercontent.com/a-/ACB-R5wXYZICON1", 
     "url": "https://play.google.com/store/apps/details?id=com.kensify.kpsc",
     "rating": "4.5",
-    "reviews": "1200"
+    "reviews": "5000"
   },
   {
-    "title": "KSP PC & PSI Exam App",
-    "description": "Specially designed for Karnataka Police Constable and Sub-Inspector aspirants.",
-    "icon": "https://play-lh.googleusercontent.com/EXAMPLE_ICON2",
+    "title": "KSP Police Exam: Constable & SI",
+    "description": "Mock tests, bilingual content (English & Kannada) for KSP PC & PSI aspirants. All free in one app.",
+    "icon": "https://play-lh.googleusercontent.com/a-/ACB-R5wXYZICON2",
     "url": "https://play.google.com/store/apps/details?id=com.kensify.ksp",
     "rating": "4.4",
-    "reviews": "950"
+    "reviews": "500+"
   },
   {
-    "title": "Most Amazing Facts",
-    "description": "Discover jaw-dropping facts every day! Science, history, space, nature and more.",
-    "icon": "https://play-lh.googleusercontent.com/EXAMPLE_ICON3",
+    "title": "Amazing Facts - Did you know?",
+    "description": "Explore fascinating daily facts on science, history, nature & more. Curiosity meets learning.",
+    "icon": "https://play-lh.googleusercontent.com/a-/ACB-R5wXYZICON3",
     "url": "https://play.google.com/store/apps/details?id=com.kensify.maf",
     "rating": "4.6",
-    "reviews": "2000"
+    "reviews": "500+"
+  },
+  {
+    "title": "Verbal Memory Test: Brain Game",
+    "description": "Fun memory game to improve verbal recall & focus — great for students and adults alike.",
+    "icon": "https://play-lh.googleusercontent.com/a-/ACB-R5wXYZICON4",
+    "url": "https://play.google.com/store/apps/details?id=com.kensify.vmt",
+    "rating": "5.0",
+    "reviews": "100+"
+  },
+  {
+    "title": "All Karnataka Govt Exams App",
+    "description": "One‑stop prep app for all Karnataka govt exam notifications, quizzes & study materials.",
+    "icon": "https://play-lh.googleusercontent.com/a-/ACB-R5wXYZICON5",
+    "url": "https://play.google.com/store/apps/details?id=com.kensify.ake",
+    "rating": "4.0",
+    "reviews": "10+"
   }
 ]
