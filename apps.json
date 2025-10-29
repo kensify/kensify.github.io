@@ -1,0 +1,26 @@
+[
+  {
+    "title": "KPSC Exam Preparation App",
+    "description": "Prepare confidently for Karnataka Public Service Commission exams with curated quizzes and study material.",
+    "icon": "https://play-lh.googleusercontent.com/EXAMPLE_ICON1", 
+    "url": "https://play.google.com/store/apps/details?id=com.kensify.kpsc",
+    "rating": "4.5",
+    "reviews": "1200"
+  },
+  {
+    "title": "KSP PC & PSI Exam App",
+    "description": "Specially designed for Karnataka Police Constable and Sub-Inspector aspirants.",
+    "icon": "https://play-lh.googleusercontent.com/EXAMPLE_ICON2",
+    "url": "https://play.google.com/store/apps/details?id=com.kensify.ksp",
+    "rating": "4.4",
+    "reviews": "950"
+  },
+  {
+    "title": "Most Amazing Facts",
+    "description": "Discover jaw-dropping facts every day! Science, history, space, nature and more.",
+    "icon": "https://play-lh.googleusercontent.com/EXAMPLE_ICON3",
+    "url": "https://play.google.com/store/apps/details?id=com.kensify.facts",
+    "rating": "4.6",
+    "reviews": "2000"
+  }
+]
