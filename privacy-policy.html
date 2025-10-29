@@ -1,89 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Kensify</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy - Kensify</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+    /* General Styles */
+    body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        background: linear-gradient(to right, #e3f2fd, #ffffff);
+        color: #333;
+        scroll-behavior: smooth;
+    }
+    header {
+        background: linear-gradient(90deg, #3498db, #6dd5fa);
+        color: #fff;
+        padding: 60px 20px;
+        text-align: center;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        position: relative;
+    }
+    header h1 {
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.8rem;
+    }
+    header p {
+        margin-top: 10px;
+        font-size: 1.2rem;
+        opacity: 0.9;
+    }
+
+    /* Side Navigation */
+    .sidenav {
+        height: 100%;
+        width: 220px;
+        position: fixed;
+        top: 120px;
+        left: 20px;
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        padding: 25px;
+        overflow-y: auto;
+        transition: 0.3s;
+    }
+    .sidenav h3 {
+        margin-top: 0;
+        margin-bottom: 15px;
+        font-family: 'Montserrat', sans-serif;
+        color: #3498db;
+    }
+    .sidenav a {
+        display: block;
+        color: #3498db;
+        padding: 10px 0;
+        text-decoration: none;
+        font-weight: 500;
+        transition: 0.3s;
+    }
+    .sidenav a:hover {
+        color: #6dd5fa;
+        transform: translateX(5px);
+    }
+
+    /* Container */
+    .container {
+        max-width: 900px;
+        margin: 50px auto;
+        background: #fff;
+        padding: 50px;
+        border-radius: 20px;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        position: relative;
+    }
+
+    /* Section Headers */
+    h2 {
+        color: #3498db;
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+        transition: color 0.3s;
+        scroll-margin-top: 120px;
+    }
+    h2 i {
+        margin-right: 10px;
+    }
+    h2:hover {
+        color: #6dd5fa;
+    }
+
+    /* Paragraphs & Lists */
+    p, li {
+        font-size: 1.05rem;
+        line-height: 1.8;
+    }
+    ul {
+        padding-left: 25px;
+    }
+    a {
+        color: #3498db;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #6dd5fa;
+        text-decoration: underline;
+    }
+
+    /* Section Images */
+    .section-image {
+        float: right;
+        width: 120px;
+        height: 120px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        border-radius: 15px;
+        object-fit: cover;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        transition: transform 0.3s;
+    }
+    .section-image:hover {
+        transform: scale(1.05);
+    }
+
+    /* Section Dividers */
+    .divider {
+        height: 4px;
+        background: linear-gradient(to right, #3498db, #6dd5fa);
+        margin: 40px 0;
+        border-radius: 2px;
+    }
+
+    /* Footer */
+    .footer {
+        text-align: center;
+        margin: 60px 0 20px 0;
+        font-size: 0.9rem;
+        color: #666;
+    }
+
+    /* Responsive */
+    @media screen and (max-width: 1000px) {
+        .sidenav {
+            display: none;
         }
         .container {
-            max-width: 800px;
-            margin: 40px auto;
-            background: #fff;
+            margin: 20px;
             padding: 30px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            border-radius: 8px;
         }
-        h1, h2 {
-            color: #2c3e50;
+        .section-image {
+            float: none;
+            display: block;
+            margin: 20px auto;
         }
-        a {
-            color: #3498db;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-    </style>
+    }
+</style>
 </head>
 <body>
-    <div class="container">
-        <h1>Privacy Policy</h1>
-        <p>The Kensify Company built this app as a Free app. This SERVICE is provided by Kensify at no cost and is intended for use as is.</p>
 
-        <p>This page informs visitors regarding our policies regarding the collection, use, and disclosure of Personal Information if anyone decides to use our Service. By using our Service, you agree to the collection and use of information in accordance with this policy. The Personal Information we collect is used for providing and improving the Service. We will not use or share your information except as described in this Privacy Policy.</p>
+<header>
+    <h1>Kensify Privacy Policy</h1>
+    <p>Protecting your personal information is our top priority.</p>
+</header>
 
-        <p>The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which are accessible in this app unless otherwise defined in this Privacy Policy.</p>
+<div class="sidenav">
+    <h3>Sections</h3>
+    <a href="#info">Information Collection</a>
+    <a href="#log">Log Data</a>
+    <a href="#cookies">Cookies</a>
+    <a href="#providers">Service Providers</a>
+    <a href="#security">Security</a>
+    <a href="#analytics">Analytics</a>
+    <a href="#ads">Advertising</a>
+    <a href="#retention">Data Retention</a>
+    <a href="#rights">User Rights</a>
+    <a href="#links">Links</a>
+    <a href="#children">Children's Privacy</a>
+    <a href="#changes">Changes</a>
+    <a href="#contact">Contact</a>
+</div>
 
-        <h2>Information Collection and Use</h2>
-        <p>For a better experience while using our Service, we may request certain personally identifiable information. However, we are not collecting any personal information through our application. Any information requested will be retained and used as described in this privacy policy.</p>
+<div class="container">
+    <p>The Kensify Company built this app as a Free app. This SERVICE is provided by Kensify at no cost and is intended for use as is.</p>
+    <p>This page informs visitors regarding our policies regarding the collection, use, and disclosure of Personal Information if anyone decides to use our Service. By using our Service, you agree to the collection and use of information in accordance with this policy. The Personal Information we collect is used for providing and improving the Service. We will not use or share your information except as described in this Privacy Policy.</p>
 
-        <p>The app does use third-party services that may collect information used to identify you. Links to the privacy policies of third-party service providers used by the app:</p>
-        <ul>
-            <li>Google Play Services</li>
-            <li>AdMob</li>
-            <li>Google Analytics for Firebase</li>
-        </ul>
+    <h2 id="info"><i class="fas fa-info-circle section-icon"></i> Information Collection and Use</h2>
+    <img src="https://images.unsplash.com/photo-1590608897129-79e4fcfd0e76?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=120" alt="Information" class="section-image">
+    <p>We do not collect personal information directly. Third-party services may collect information used to identify you. Links to their privacy policies:</p>
+    <ul>
+        <li>Google Play Services</li>
+        <li>AdMob</li>
+        <li>Google Analytics for Firebase</li>
+    </ul>
 
-        <h2>Log Data</h2>
-        <p>We want to inform you that whenever you use our Service, in case of an error in the app, we collect data and information (through third-party products) on your phone called Log Data. This may include your device's IP address, device name, operating system version, app configuration, the time and date of your use of the Service, and other statistics.</p>
+    <div class="divider"></div>
 
-        <h2>Cookies</h2>
-        <p>Cookies are files with a small amount of data commonly used as anonymous unique identifiers. This Service does not explicitly use cookies. However, the app may use third-party code and libraries that use cookies to collect information and improve their services. You may accept or refuse cookies, but some portions of the Service may not function if cookies are disabled.</p>
+    <h2 id="log"><i class="fas fa-file-alt section-icon"></i> Log Data</h2>
+    <p>In case of errors, we collect Log Data, which may include IP address, device info, OS version, app settings, usage times, and statistics.</p>
 
-        <h2>Service Providers</h2>
-        <p>We may employ third-party companies and individuals for the following reasons:</p>
-        <ul>
-            <li>To facilitate our Service;</li>
-            <li>To provide the Service on our behalf;</li>
-            <li>To perform Service-related services; or</li>
-            <li>To assist us in analyzing how our Service is used.</li>
-        </ul>
-        <p>These third parties may have access to your Personal Information to perform tasks on our behalf but are obligated not to disclose or use it for any other purpose.</p>
+    <div class="divider"></div>
 
-        <h2>Security</h2>
-        <p>We value your trust in providing us your Personal Information and strive to use commercially acceptable means of protecting it. However, no method of transmission over the internet or electronic storage is 100% secure, and we cannot guarantee absolute security.</p>
+    <h2 id="cookies"><i class="fas fa-cookie-bite section-icon"></i> Cookies</h2>
+    <p>Cookies may be used by third-party libraries. You may accept or refuse cookies; some parts of the app may not function if disabled.</p>
 
-        <h2>Links to Other Sites</h2>
-        <p>This Service may contain links to other sites. We have no control over and assume no responsibility for the content, privacy policies, or practices of third-party sites or services.</p>
+    <div class="divider"></div>
 
-        <h2>Children’s Privacy</h2>
-        <p>These Services do not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13. If we discover that a child under 13 has provided personal information, we delete it immediately. Parents or guardians aware that their child has provided personal information may contact us for necessary action.</p>
+    <h2 id="providers"><i class="fas fa-users section-icon"></i> Service Providers</h2>
+    <ul>
+        <li>To facilitate our Service;</li>
+        <li>To provide the Service on our behalf;</li>
+        <li>To perform Service-related services;</li>
+        <li>To analyze Service usage.</li>
+    </ul>
 
-        <h2>Changes to This Privacy Policy</h2>
-        <p>We may update this Privacy Policy from time to time. You are advised to review this page periodically for changes. This policy is effective as of 25-06-2023.</p>
+    <div class="divider"></div>
 
-        <h2>Contact Us</h2>
-        <p>If you have any questions or suggestions about our Privacy Policy, contact us at <a href="mailto:support-kensify@gmail.com">support-kensify@gmail.com</a>.</p>
-    </div>
+    <h2 id="security"><i class="fas fa-lock section-icon"></i> Security</h2>
+    <p>We use commercially acceptable methods to protect your information, but no method is 100% secure. Absolute security cannot be guaranteed.</p>
+
+    <div class="divider"></div>
+
+    <h2 id="analytics"><i class="fas fa-chart-line section-icon"></i> Analytics</h2>
+    <p>We may use analytics tools to monitor app performance and improve features. Data is aggregated and anonymized whenever possible.</p>
+
+    <div class="divider"></div>
+
+    <h2 id="ads"><i class="fas fa-bullhorn section-icon"></i> Advertising</h2>
+    <p>Ads may be shown using third-party services like AdMob. These services may collect data to show personalized ads.</p>
+
+    <div class="divider"></div>
+
+    <h2 id="retention"><i class="fas fa-database section-icon"></i> Data Retention</h2>
+    <p>We retain collected data only as long as necessary for the purposes described. Unnecessary data is deleted securely.</p>
+
+    <div class="divider"></div>
+
+    <h2 id="rights"><i class="fas fa-user-shield section-icon"></i> User Rights</h2>
+    <p>Users can request data access, correction, deletion, and object to processing where applicable under GDPR/CCPA. Contact us for such requests.</p>
+
+    <div class="divider"></div>
+
+    <h2 id="links"><i class="fas fa-link section-icon"></i> Links to Other Sites</h2>
+    <p>This Service may contain links to other sites. We are not responsible for the content, privacy policies, or practices of third-party sites.</p>
+
+    <div class="divider"></div>
+
+    <h2 id="children"><i class="fas fa-child section-icon"></i> Children’s Privacy</h2>
+    <p>This Service is not intended for children under 13. Personal information from children under 13 will be deleted immediately.</p>
+
+    <div class="divider"></div>
+
+    <h2 id="changes"><i class="fas fa-edit section-icon"></i> Changes to This Privacy Policy</h2>
+    <p>We may update this Privacy Policy periodically. The current policy is effective as of 25-06-2023.</p>
+
+    <div class="divider"></div>
+
+    <h2 id="contact"><i class="fas fa-envelope section-icon"></i> Contact Us</h2>
+    <p>If you have any questions or suggestions, contact us at <a href="mailto:support-kensify@gmail.com">support-kensify@gmail.com</a>.</p>
+</div>
+
+<div class="footer">
+    &copy; 2025 Kensify. All rights reserved.
+</div>
+
 </body>
 </html>
