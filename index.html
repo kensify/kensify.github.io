@@ -1,163 +1,255 @@
+<!-- 🌟 Kensify – Modern Education Homepage 🌟 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kensify – Learn Smarter, Grow Brighter</title>
-  <meta name="description" content="Kensify creates educational apps for KPSC, KSP, PSI exams, and fun learning experiences like Amazing Facts and Memory Tests. Learn, explore, and achieve your goals with Kensify.">
-  <meta name="keywords" content="Kensify, KPSC Exam App, KSP Exam App, PSI Exam App, Karnataka Govt Exams, Amazing Facts App, Educational Apps, Learning Apps, Study App, Competitive Exams Karnataka">
-
+  <meta name="title" content="Kensify – Modern Learning Platform for Students & Professionals">
+  <meta name="description" content="Kensify is a modern education platform providing apps for KPSC, KSP, PSI exams, Amazing Facts, Memory Test, and more. Learn, explore, and achieve your goals with Kensify.">
+  <title>Kensify – Learn Smarter, Achieve More</title>
+  
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
-  <!-- Bootstrap 5 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
     body {
-      font-family: 'Poppins', sans-serif;
-      background: #f9fafc;
       margin: 0;
-      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.7;
       color: #333;
+      background: #f5f7fa;
     }
-    header {
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
       background: #2a4d9b;
       color: white;
-      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
-    header .navbar-brand {
-      font-weight: 600;
-      font-size: 1.6em;
-    }
-    header .nav-link {
-      color: white !important;
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
       font-weight: 500;
+      transition: 0.3s;
     }
-    .container {
-      max-width: 1100px;
-      margin: 50px auto;
+    .navbar a:hover {
+      color: #f1c40f;
     }
-    h1 {
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       text-align: center;
-      color: #6a11cb;
-      font-size: 2.6em;
-      margin-bottom: 20px;
+      padding: 100px 20px 60px;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: white;
     }
-    .highlight {
-      background: linear-gradient(90deg, #6a11cb, #2575fc);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+    .hero h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+    .hero p {
+      font-size: 1.3em;
+      margin: 20px 0 40px;
+    }
+    .hero a {
+      padding: 15px 35px;
+      background: #f1c40f;
+      color: #2a4d9b;
+      border-radius: 30px;
+      text-decoration: none;
       font-weight: 600;
+      transition: 0.3s;
     }
-    #app-grid {
+    .hero a:hover {
+      background: #e1b70d;
+    }
+
+    /* Section Titles */
+    h2.section-title {
+      text-align: center;
+      font-size: 2.2em;
+      margin: 60px 0 30px;
+      color: #2a4d9b;
+    }
+
+    /* Mission Section */
+    .mission {
+      display: flex;
+      justify-content: center;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+    .mission p {
+      font-size: 1.1em;
+      color: #555;
+    }
+
+    /* Apps Grid */
+    .apps-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 25px;
-      margin-top: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px;
     }
     .app-card {
-      background: #f1f5ff;
+      background: white;
       border-radius: 15px;
-      padding: 20px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-      transition: 0.3s;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      padding: 25px;
       text-align: center;
+      transition: 0.3s;
     }
     .app-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.15);
     }
     .app-card img {
-      max-width: 100px;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
       margin-bottom: 15px;
-      border-radius: 15px;
     }
-    .app-card h5 {
-      font-size: 1.2em;
-      margin-bottom: 10px;
+    .app-card h3 {
       color: #2a4d9b;
+      font-size: 1.2em;
+      margin: 10px 0;
     }
     .app-card p {
-      font-size: 0.95em;
       color: #555;
-      margin-bottom: 10px;
+      font-size: 0.95em;
+      min-height: 60px;
     }
     .btn-download {
-      background: linear-gradient(90deg, #6a11cb, #2575fc);
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 25px;
+      background: #2575fc;
       color: white;
-      padding: 10px 20px;
       border-radius: 25px;
       text-decoration: none;
-      font-weight: 600;
+      font-weight: 500;
       transition: 0.3s;
     }
     .btn-download:hover {
-      background: linear-gradient(90deg, #2575fc, #6a11cb);
+      background: #6a11cb;
     }
-    footer {
+
+    /* CTA Section */
+    .cta {
       text-align: center;
-      margin-top: 60px;
-      padding: 30px 15px;
+      padding: 80px 20px;
       background: #2a4d9b;
       color: white;
     }
-    footer p, footer a {
-      color: white;
-      margin: 5px 0;
+    .cta a {
+      padding: 15px 40px;
+      background: #f1c40f;
+      color: #2a4d9b;
+      border-radius: 30px;
       text-decoration: none;
-    }
-    .top-section p {
-      text-align: center;
-      margin-bottom: 40px;
+      font-weight: 600;
       font-size: 1.1em;
-      color: #555;
+      transition: 0.3s;
+    }
+    .cta a:hover {
+      background: #e1b70d;
+    }
+
+    /* Footer */
+    footer {
+      background: #1c356a;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.9em;
+    }
+    footer a {
+      color: #f1c40f;
+      text-decoration: none;
+      margin-left: 10px;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media(max-width: 768px){
+      .hero h1 {
+        font-size: 2.2em;
+      }
+      .hero p {
+        font-size: 1.1em;
+      }
     }
   </style>
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <nav class="navbar navbar-expand-lg container">
-      <a class="navbar-brand" href="#">Kensify</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-          <li class="nav-item"><a class="nav-link" href="privacy-policy.html">Privacy</a></li>
-          <li class="nav-item"><a class="nav-link" href="terms.html">Terms</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-
-  <!-- Main Section -->
-  <div class="container">
-    <h1>🌟 Kensify – Learn Smarter, Grow Brighter 🌟</h1>
-    <div class="top-section">
-      <p><span class="highlight">Kensify</span> is your one-stop educational platform for KPSC, KSP, PSI exams, and fun learning apps. Explore, learn, and grow with our carefully curated Android applications.</p>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo"><strong>Kensify</strong></div>
+    <div>
+      <a href="#">Home</a>
+      <a href="#mission">About</a>
+      <a href="#apps">Apps</a>
+      <a href="#contact">Contact</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-of-service.html">Terms</a>
     </div>
-
-    <!-- Dynamic Apps Section -->
-    <div id="app-grid"></div>
   </div>
 
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Learn Smarter, Achieve More</h1>
+    <p>Modern educational apps for KPSC, KSP, PSI exams, Amazing Facts, Memory Test, and much more.</p>
+    <a href="#apps">Explore Our Apps</a>
+  </section>
+
+  <!-- Mission Section -->
+  <section id="mission">
+    <h2 class="section-title">Our Mission</h2>
+    <div class="mission">
+      <p>At <strong>Kensify</strong>, we aim to empower learners of all ages with high-quality, engaging educational apps. Our goal is to make learning accessible, fun, and effective, whether you’re preparing for competitive exams or exploring new knowledge.</p>
+    </div>
+  </section>
+
+  <!-- Apps Section -->
+  <section id="apps">
+    <h2 class="section-title">Popular Apps</h2>
+    <div class="apps-grid" id="app-grid">
+      <!-- Apps will be loaded here dynamically -->
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta">
+    <h2>Start Learning with Kensify Today!</h2>
+    <a href="https://play.google.com/store/apps/dev?id=8096994920631719362" target="_blank">Download Apps Now</a>
+  </section>
+
   <!-- Footer -->
-  <footer>
-    <p>📧 info@company.com | ☎ 010-020-0340</p>
-    <p>© 2025 Kensify. Designed with 💙 for learners everywhere.</p>
+  <footer id="contact">
+    <p>© 2025 Kensify | Contact: info@kensify.com | Phone: 010-020-0340</p>
+    <p>
+      <a href="privacy-policy.html">Privacy Policy</a> |
+      <a href="terms-of-service.html">Terms of Service</a>
+    </p>
   </footer>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Dynamic Apps Loader -->
+  <!-- Load Apps from apps.json -->
   <script>
     fetch('apps.json')
       .then(res => res.json())
@@ -167,7 +259,7 @@
           grid.innerHTML += `
             <div class="app-card">
               <img src="${app.icon}" alt="${app.title}">
-              <h5>${app.title}</h5>
+              <h3>${app.title}</h3>
               <p>${app.description}</p>
               <p>⭐ ${app.rating} (${app.reviews} Reviews)</p>
               <a href="${app.url}" target="_blank" class="btn-download">Download</a>
@@ -176,5 +268,6 @@
         });
       });
   </script>
+
 </body>
 </html>
