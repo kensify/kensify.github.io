@@ -1,209 +1,208 @@
+<!-- 🌟 Kensify – Privacy Policy Page 🌟 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy | Kensify</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="Kensify Privacy Policy">
+  <meta name="description" content="Privacy Policy for Kensify educational apps including KPSC Exam Prep, Amazing Facts, and Memory Test. Learn how we collect and protect user data.">
+  <title>Privacy Policy – Kensify</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
-    /* ---------- Base Styles ---------- */
     body {
       margin: 0;
-      font-family: 'Poppins', Arial, sans-serif;
-      background: linear-gradient(135deg, #0f172a, #1e293b);
-      color: #f8fafc;
+      font-family: 'Poppins', sans-serif;
       line-height: 1.7;
-      overflow-x: hidden;
+      color: #333;
+      background: #f5f7fa;
     }
 
-    h1, h2 {
-      color: #38bdf8;
-      font-weight: 600;
-      letter-spacing: 0.5px;
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background: #2a4d9b;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
-
-    a {
-      color: #38bdf8;
+    .navbar a {
+      color: white;
       text-decoration: none;
+      margin-left: 25px;
+      font-weight: 500;
+      transition: 0.3s;
     }
-    a:hover { text-decoration: underline; }
+    .navbar a:hover {
+      color: #f1c40f;
+    }
 
-    /* ---------- Layout ---------- */
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 100px 20px 60px;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: white;
+    }
+    .hero h1 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2em;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    /* Content */
     .container {
       max-width: 900px;
       margin: 60px auto;
-      padding: 30px;
-      background: rgba(255, 255, 255, 0.05);
-      border-radius: 20px;
-      backdrop-filter: blur(12px);
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-      animation: fadeIn 0.7s ease-in-out;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    .header {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    .header h1 {
-      font-size: 28px;
-      margin-bottom: 8px;
-      background: linear-gradient(90deg, #60a5fa, #38bdf8);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .header p {
-      color: #cbd5e1;
-      font-size: 15px;
-    }
-
-    /* ---------- Sections ---------- */
-    section {
-      margin-bottom: 28px;
+      padding: 40px 30px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
     }
 
     h2 {
-      font-size: 20px;
-      border-left: 4px solid #38bdf8;
+      color: #2a4d9b;
+      border-left: 4px solid #f1c40f;
       padding-left: 10px;
-      margin-bottom: 12px;
+      margin-top: 40px;
+      font-size: 1.4em;
+    }
+
+    p, li {
+      color: #555;
+      font-size: 1em;
     }
 
     ul {
-      padding-left: 22px;
+      padding-left: 25px;
     }
 
-    li {
-      margin-bottom: 8px;
-      color: #e2e8f0;
-    }
-
-    p {
-      color: #e2e8f0;
-      margin-bottom: 10px;
-    }
-
-    .highlight {
-      color: #7dd3fc;
-      font-weight: 500;
-    }
-
-    /* ---------- Footer ---------- */
-    .footer {
-      text-align: center;
-      margin-top: 30px;
-      border-top: 1px solid rgba(255,255,255,0.08);
-      padding-top: 20px;
-      font-size: 13px;
-      color: #94a3b8;
-    }
-
-    .btn {
-      display: inline-block;
-      background: linear-gradient(90deg, #38bdf8, #60a5fa);
-      color: #0f172a;
-      font-weight: 600;
-      padding: 10px 20px;
-      border-radius: 12px;
-      margin-top: 10px;
+    a {
+      color: #2575fc;
       text-decoration: none;
-      transition: 0.25s ease;
     }
-    .btn:hover {
-      background: linear-gradient(90deg, #0ea5e9, #38bdf8);
-      transform: translateY(-2px);
+    a:hover {
+      text-decoration: underline;
     }
 
-    @media (max-width: 640px) {
-      .container { padding: 20px; margin: 40px 10px; }
-      h1 { font-size: 24px; }
-      h2 { font-size: 18px; }
+    /* Footer */
+    footer {
+      background: #1c356a;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.9em;
+      margin-top: 60px;
+    }
+    footer a {
+      color: #f1c40f;
+      text-decoration: none;
+      margin-left: 10px;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2em;
+      }
+      .container {
+        padding: 25px 20px;
+        margin: 40px 15px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <div class="container">
-    <div class="header">
-      <h1>Privacy Policy</h1>
-      <p>Effective for Kensify educational apps (KPSC Prep, Amazing Facts, Verbal Memory Test, and more).</p>
-    </div>
-
-    <section>
-      <h2>1. Introduction</h2>
-      <p>Welcome to <span class="highlight">Kensify</span>. Your privacy is important to us. This Privacy Policy explains how we collect, use, and protect your information when you use our Android applications and related services.</p>
-    </section>
-
-    <section>
-      <h2>2. Information We Collect</h2>
-      <ul>
-        <li><strong>Personal Data:</strong> We may collect your name or email only if you contact us directly.</li>
-        <li><strong>Device Information:</strong> Includes device model, OS version, app usage data, and crash reports.</li>
-        <li><strong>Usage Analytics:</strong> We collect anonymous analytics to improve app performance and features.</li>
-        <li><strong>Ad Data:</strong> Third-party networks like Google AdMob may collect anonymous identifiers to personalize ads.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>3. How We Use Your Information</h2>
-      <ul>
-        <li>To improve app functionality and user experience.</li>
-        <li>To analyze performance and fix bugs.</li>
-        <li>To show relevant ads and keep the app free.</li>
-        <li>To communicate with users who reach out for support.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>4. Advertising & Analytics</h2>
-      <p>Our apps may include integrations with <span class="highlight">Google Play Services</span>, <span class="highlight">Firebase Analytics</span>, and <span class="highlight">AdMob</span>. These services may collect data per their respective privacy policies to deliver personalized ads and track app performance.</p>
-    </section>
-
-    <section>
-      <h2>5. Data Retention & Security</h2>
-      <p>We retain your information only as long as necessary to provide our services and comply with the law. We apply reasonable technical measures to protect your data against unauthorized access or misuse.</p>
-    </section>
-
-    <section>
-      <h2>6. Children's Privacy</h2>
-      <p>Our apps are designed for general audiences. We do not knowingly collect personal data from children under 13. If you believe such data was collected, please contact us immediately for removal.</p>
-    </section>
-
-    <section>
-      <h2>7. Your Privacy Choices</h2>
-      <ul>
-        <li>You can disable personalized ads via your device settings.</li>
-        <li>You may request data deletion by contacting us.</li>
-        <li>You can opt out of analytics collection if supported by your device.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>8. Third-Party Links</h2>
-      <p>Our apps may contain links to third-party websites or services. Kensify is not responsible for the content or privacy practices of these external services.</p>
-    </section>
-
-    <section>
-      <h2>9. Updates to This Policy</h2>
-      <p>We may update this Privacy Policy periodically. Any changes will be posted on this page with the new effective date. Continued use of our apps after an update means you accept the revised terms.</p>
-    </section>
-
-    <section>
-      <h2>10. Contact Us</h2>
-      <p>If you have any questions, suggestions, or data-related requests, please contact us at:</p>
-      <p><strong>Email:</strong> <a href="mailto:kensify.apps@gmail.com">kensify.apps@gmail.com</a></p>
-    </section>
-
-    <div class="footer">
-      <p>© 2025 Kensify • All Rights Reserved</p>
-      <a href="terms-of-service.html" class="btn">View Terms of Service</a>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo"><strong>Kensify</strong></div>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="index.html#mission">About</a>
+      <a href="index.html#apps">Apps</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-of-service.html">Terms</a>
     </div>
   </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Privacy Policy</h1>
+    <p>Your privacy matters to us. Learn how Kensify collects, uses, and safeguards your information across all our apps.</p>
+  </section>
+
+  <!-- Content Section -->
+  <div class="container">
+
+    <h2>1. Introduction</h2>
+    <p>Welcome to <strong>Kensify</strong>. This Privacy Policy explains how we handle your personal information when you use our educational Android applications such as KPSC Exam Prep, Amazing Facts, and Memory Test. We value your trust and are committed to ensuring your data is secure.</p>
+
+    <h2>2. Information We Collect</h2>
+    <ul>
+      <li><strong>Personal Information:</strong> We may collect your name or email address if you contact us directly for support or feedback.</li>
+      <li><strong>Device Information:</strong> We collect data such as device model, operating system version, and crash reports to improve performance.</li>
+      <li><strong>Usage Analytics:</strong> Anonymous usage data helps us understand app performance and improve user experience.</li>
+      <li><strong>Ad Data:</strong> Our apps use Google AdMob and related services, which may collect anonymous identifiers for personalized ads.</li>
+    </ul>
+
+    <h2>3. How We Use Your Data</h2>
+    <ul>
+      <li>To enhance app functionality and performance.</li>
+      <li>To fix issues and improve user experience.</li>
+      <li>To provide relevant content and ads.</li>
+      <li>To communicate with users who reach out for help or feedback.</li>
+    </ul>
+
+    <h2>4. Advertising and Analytics</h2>
+    <p>We integrate third-party services such as <strong>Google AdMob</strong> and <strong>Firebase Analytics</strong> to deliver ads and analyze usage. These services operate under their own privacy policies and may collect anonymous identifiers like Advertising IDs.</p>
+
+    <h2>5. Data Retention and Security</h2>
+    <p>We retain data only as long as needed to provide our services. Reasonable security measures are in place to prevent unauthorized access, disclosure, or misuse of your data.</p>
+
+    <h2>6. Children's Privacy</h2>
+    <p>Our apps are designed for general audiences. We do not knowingly collect personal information from children under 13. If you believe we have done so, please contact us immediately so we can remove such data.</p>
+
+    <h2>7. Your Privacy Choices</h2>
+    <ul>
+      <li>You can turn off personalized ads in your device’s ad settings.</li>
+      <li>You may request data deletion by contacting us.</li>
+      <li>You can opt out of analytics collection where supported.</li>
+    </ul>
+
+    <h2>8. Third-Party Links</h2>
+    <p>Some Kensify apps may include links to third-party websites or services. We are not responsible for their privacy practices or content.</p>
+
+    <h2>9. Policy Updates</h2>
+    <p>We may update this Privacy Policy periodically. Changes will be posted on this page, and the new effective date will reflect at the top.</p>
+
+    <h2>10. Contact Us</h2>
+    <p>For questions or concerns about this Privacy Policy, please contact us:</p>
+    <p><strong>Email:</strong> <a href="mailto:kensify.apps@gmail.com">kensify.apps@gmail.com</a></p>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Kensify | All Rights Reserved</p>
+    <p>
+      <a href="privacy-policy.html">Privacy Policy</a> |
+      <a href="terms-of-service.html">Terms of Service</a>
+    </p>
+  </footer>
 
 </body>
 </html>
