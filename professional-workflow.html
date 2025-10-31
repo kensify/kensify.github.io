@@ -1,0 +1,124 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Professional Workflow — Quiz Creation & Translation</title>
+  <style>
+    :root{--bg:#f7fafc;--card:#ffffff;--muted:#6b7280;--accent:#0f172a}
+    body{font-family:Inter, Roboto, Arial, sans-serif;background:var(--bg);color:var(--accent);margin:0;padding:24px}
+    .container{max-width:900px;margin:0 auto}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
+    h1{font-size:20px;margin:0}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+    .card{background:var(--card);border-radius:10px;box-shadow:0 6px 18px rgba(12,18,32,0.06);padding:18px;margin-bottom:14px}
+    h2{font-size:16px;margin:0 0 10px}
+    ol{padding-left:20px;margin:0}
+    li{margin:8px 0}
+    .code{background:#0b1220;color:#dbeafe;padding:10px;border-radius:6px;font-family:monospace;font-size:13px}
+    .controls{display:flex;gap:8px;align-items:center}
+    button{background:#111827;color:white;border:0;padding:8px 12px;border-radius:8px;cursor:pointer}
+    button.secondary{background:#e6edf3;color:#0f172a}
+    .muted{color:var(--muted);font-size:13px}
+    .lang-hidden{display:none}
+    footer{margin-top:8px;color:var(--muted);font-size:13px}
+    @media (max-width:600px){body{padding:12px}.card{padding:12px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h1>Professional Workflow — Quiz Creation & Translation</h1>
+        <p class="lead">Clear, repeatable steps for creating, reviewing and publishing multilingual quiz content.</p>
+      </div>
+      <div class="controls">
+        <button id="toggleLang">Show Kannada</button>
+        <button id="printBtn" class="secondary">Print / Save as PDF</button>
+      </div>
+    </header><section class="card" id="stage1">
+  <h2>Stage 1 — Content Creation</h2>
+  <ol>
+    <li><strong>Search for questions:</strong> Collect questions from verified, authoritative sources.</li>
+    <li><strong>Develop four options:</strong> Create one correct and three plausible distractors.</li>
+    <li><strong>Verify the correct option:</strong> Cross-check facts and cite sources.</li>
+    <li><strong>Write an explanation:</strong> Provide a concise educational rationale for the correct answer.</li>
+  </ol>
+  <p class="muted">Tip: Keep questions short, avoid ambiguous wording, and prefer active voice.</p>
+</section>
+
+<section class="card" id="stage2">
+  <h2>Stage 2 — Language & Quality Review</h2>
+  <ol>
+    <li><strong>Grammatical check (English):</strong> Proofread for grammar, punctuation, and consistency.</li>
+    <li><strong>Translate to Kannada:</strong> Translate preserving meaning and context; keep technical terms consistent.</li>
+    <li><strong>Proofread the translation:</strong> Check grammar, idiomatic phrasing, and cultural appropriateness.</li>
+  </ol>
+  <p class="muted">Tip: Use brief sentences for better machine translation quality and easier human proofreading.</p>
+</section>
+
+<section class="card" id="stage3">
+  <h2>Stage 3 — Final Validation & Publishing</h2>
+  <ol>
+    <li><strong>Cross-verify both languages:</strong> Ensure that meaning, answer options and explanations match precisely.</li>
+    <li><strong>Accessibility check:</strong> Ensure readable font sizes, contrast and screen-reader friendly markup.</li>
+    <li><strong>Approval workflow:</strong> Send to reviewer(s), log approval, and record source citations.</li>
+    <li><strong>Publish:</strong> Export to your app/database and keep a versioned backup.</li>
+  </ol>
+  <p class="muted">Tip: Keep a changelog and a list of sources for auditability and future edits.</p>
+</section>
+
+<section class="card lang-hidden" id="kannada">
+  <h2>ಕಾಲಮ್ — ಕನ್ನಡ ವರ್ಗ</h2>
+  <p>ನಿಯಮಿತ ಕಾರ್ಯಪ್ರವಾಹದ ಸಣ್ಣ ಸಂಕ್ಷೇಪ (English → Kannada):</p>
+  <ol>
+    <li><strong>ಪ್ರಶ್ನೆ ಸಂಗ್ರಹಿಸಿ:</strong> ನಂಬಿಗಸ್ತ ಮೂಲಗಳಿಂದ ಪ್ರಶ್ನೆಗಳನ್ನು ಆಯ್ಕೆಮಾಡಿ.</li>
+    <li><strong>ನಾಲ್ಕು ಆಯ್ಕೆಗಳು:</strong> ಒಂದು ಸರಿಯಾದ ಮತ್ತು ಮೂರು ವಿವಾದದಾಯಕ ಆಯ್ಕೆಗಳನ್ನು ಸೃಷ್ಟಿಸಿ.</li>
+    <li><strong>ಸರಿಯಾದ ಆಯ್ಕೆಯನ್ನು ದೃಢೀಕರಿಸಿ:</strong> ಮೂಲಗಳನ್ನು ಪರಿಶೀಲಿಸಿ.</li>
+    <li><strong>ವಿವರಣೆ ಬರೆಯಿರಿ:</strong> ಸರಿಯಾದ ಉತ್ತರಕ್ಕೆ ಸ್ಪಷ್ಟ ಮತ್ತು ಸಂಕ್ಷಿಪ್ತ ವಿವರಣೆ ನೀಡಿ.</li>
+  </ol>
+  <p class="muted">ಸೂಚನೆ: ಸರಳ ವಾಕ್ಯರಚನೆಗಳು ಮಿಷನ್/ಯಂತ್ರಅನುವಾದಕ್ಕೆ ಉತ್ತಮ.</p>
+</section>
+
+<div style="display:flex;gap:8px;margin-top:12px">
+  <button id="downloadBtn">Download HTML</button>
+  <button id="copyBtn" class="secondary">Copy to Clipboard</button>
+</div>
+
+<footer>
+  <p>Created for: Quiz content teams — Kensify. Use this template for consistent high-quality question pipelines.</p>
+</footer>
+
+  </div>  <script>
+    const toggleBtn = document.getElementById('toggleLang');
+    const kannada = document.getElementById('kannada');
+    const printBtn = document.getElementById('printBtn');
+    const downloadBtn = document.getElementById('downloadBtn');
+    const copyBtn = document.getElementById('copyBtn');
+
+    toggleBtn.addEventListener('click', ()=>{
+      const showing = !kannada.classList.toggle('lang-hidden');
+      toggleBtn.textContent = showing ? 'Hide Kannada' : 'Show Kannada';
+    });
+
+    printBtn.addEventListener('click', ()=>window.print());
+
+    downloadBtn.addEventListener('click', ()=>{
+      const blob = new Blob([document.documentElement.outerHTML], {type: 'text/html'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = 'professional-workflow.html'; document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
+    });
+
+    copyBtn.addEventListener('click', async ()=>{
+      try{
+        await navigator.clipboard.writeText(document.documentElement.outerHTML);
+        copyBtn.textContent = 'Copied!';
+        setTimeout(()=>copyBtn.textContent = 'Copy to Clipboard',1500);
+      }catch(e){
+        copyBtn.textContent = 'Copy failed';
+      }
+    });
+  </script></body>
+</html>
